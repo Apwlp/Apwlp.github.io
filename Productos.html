@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos</title>
+  <link rel="icon" href="Logo Ariq.png" />
+  <link rel="stylesheet" href="Productos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <script src="scripts.js"></script>
+
+  <header>
+    <img class="brand-logo" src="Logo Ariq.png">
+    <h1>Productos</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <a href="index.html">Inicio</a>
+      <a href="">Productos</a>
+      <a href="Contacto.html">Contacto</a>
+      <a href="Nosotros.html">Nosotros</a>
+    </ul>
+
+    <button class="cart" id="checkout" onclick="pay()">Pagar</button>
+    <button class="cart" onclick="removeLastProduct()">Eliminar último producto</button>
+
+  </nav>
+
+  <div class="container" style="margin-top: 0px; margin-bottom: 15px;">
+    <h1 class="text-center" style="margin: 25px;">Modelos</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Pulsera 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="Anillos Agata y Otix.png" class="card-img-top img-fluid"
+            style="object-fit: cover; height: 300px;" alt="Pulsera 1">
+          <div class="card-body">
+            <h5 class="card-title">Anillos Agata y Otix</h5>
+            <p class="card-text">Conjunto de cuarzo pulido que mantiene equilibrio fluyendo la mejor energia. <br>
+              <strong>Modelo:</strong> Piedra pulida <br>
+            <div class="colors">
+              <h3>Selecione un color</h3>
+              <input type="checkbox" name="color" id="black"> Negro
+              <input type="checkbox" name="color" id="naranja"> Naranja
+            </div>
+            </p>
+            <p class="card-text" id="price">$8.00</p>
+            <a onclick="addColorVariable('Anillos Agata y Otix', 8)" class="btn btn-primary bg-dark border-dark">Agregar
+              al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pulsera 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pulsera Cristal de Murano con Broche.png" class="card-img-top img-fluid"
+            style="object-fit: fill; height: 300px;" alt="Pulsera 2">
+          <div class="card-body">
+            <h5 class="card-title">Pulsera Cristal de Murano con Broche</h5>
+            <p class="card-text">El cristal de murano es inigualables debido a su fabricación artesanal y poseen mucho
+              más brillo que otros productos artesanales, el color es un vidrio artesano obtenido bajo una técnica de
+              soplado.</p>
+            <p class="card-text" id="price">$15.00</p>
+            <a onclick="add('Pulsera Cristal de Murano con Broche', 15)"
+              class="btn btn-primary bg-dark border-dark">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pulsera 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pulsera Cuarzo.png" class="card-img-top img-fluid"
+            style="object-fit: cover; height: 300px;" alt="Pulsera 3">
+          <div class="card-body">
+            <h5 class="card-title">Pulsera Cuarzo</h5>
+            <p class="card-text">Conjunto de cuarzo que mantiene equilibrio fluyendo la merjo energia.
+              <br><strong>Modelo:</strong> Piedra natural <br>
+              <strong>Cuarzos:</strong>
+            <ul>
+              <li>Rosa</li>
+              <li>Jade</li>
+              <li>Amatista</li>
+              <li>Cristal</li>
+              <li>Ojo de tigre</li>
+              <li>Turquesa</li>
+              <li>Citrino</li>
+            </ul>
+
+            </p>
+            <p class="card-text" id="price">$8.00</p>
+            <a onclick="add('Pulsera Cuarzo', 8)" class="btn btn-primary bg-dark border-dark">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pulsera 4 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pulseras Piedras Pulidas.png" class="card-img-top img-fluid"
+            style="object-fit: fill; height: 300px;" alt="Pulsera 1">
+          <div class="card-body">
+            <h5 class="card-title">Pulsera Piedra Pulidas</h5>
+            <p class="card-text">Pulsera de piedras pulidas de tejido doble
+              <br><strong>Cuarzo:</strong>
+            <ul>
+              <li>Ojo tigre</li>
+              <li>Onix</li>
+              <li>Piedra volcanica black</li>
+            </ul>
+            <div class="colors">
+              <h3>Selecione un color</h3>
+              <input type="checkbox" name="color" id="black"> Negro
+              <input type="checkbox" name="color" id="brown"> Cafe
+            </div>
+            </p>
+            <p class="card-text" id="price">$15.00</p>
+            <a onclick="addColorVariable('Pulseras Piedras Pulidas', 15)"
+              class="btn btn-primary bg-dark border-dark">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pulsera 5 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pulsera Piedra Pulida Rosa.png" class="card-img-top img-fluid"
+            style="object-fit: cover; height: 300px;" alt="Pulsera 2">
+          <div class="card-body">
+            <h5 class="card-title">Pulsera Piedra Pulida Rosa</h5>
+            <p class="card-text">Conjunto de cuarzo pulido que mantiene equilibrio fluyendo la merjo energia.</p>
+            <p class="card-text" id="price">$10.00</p>
+            <a onclick="add('Pulsera Piedra Pulida Rosa', 10)" class="btn btn-primary bg-dark border-dark">Agregar al
+              carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pulsera 6 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="Llavero Siete Cuarzos.png" class="card-img-top img-fluid"
+            style="object-fit: fill; height: 300px;" alt="Pulsera 3">
+          <div class="card-body">
+            <h5 class="card-title">Llavero Siete Cuarzos</h5>
+            <p class="card-text">Piedra Volvanica Restaura la armonía del cuerpo y mantener una energía positiva.</p>
+            <p class="card-text" id="price">$6.00</p>
+            <a onclick="add('Llavero Siete Cuarzos', 6)" class="btn btn-primary bg-dark border-dark">Agregar al
+              carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pulsera 7 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pulsera Cuarzo Turquesa.png" class="card-img-top img-fluid"
+            style="object-fit: cover; height: 300px;" alt="Pulsera 1">
+          <div class="card-body">
+            <h5 class="card-title">Pulsera Cuarzo Turquesa</h5>
+            <p class="card-text">Hermosa pulsera de cuarzo turquesa. Ideal para combinar con tus atuendos de verano.</p>
+            <p class="card-text" id="price">$8.00</p>
+            <a onclick="add('Pulsera Cuarzo Turquesa', 8)" class="btn btn-primary bg-dark border-dark">Agregar al
+              carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pulsera 8 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pulsera Cuarzo Agata Gris.png" class="card-img-top img-fluid"
+            style="object-fit: fill; height: 300px;" alt="Pulsera 2">
+          <div class="card-body">
+            <h5 class="card-title">Pulsera Cuarzo Agata Gris</h5>
+            <p class="card-text">Elegante pulsera de cuarzo ágata gris. Perfecta para ocasiones formales.</p>
+            <p class="card-text" id="price">$8.00</p>
+            <a onclick="add('Pulsera Cuarzo Agata Gris', 8)" class="btn btn-primary bg-dark border-dark">Agregar al
+              carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pulsera 9 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="Pulsera Cuarzo Amatista.png" class="card-img-top img-fluid"
+            style="object-fit: cover; height: 300px;" alt="Pulsera 3">
+          <div class="card-body">
+            <h5 class="card-title">Pulsera Cuarzo Amatista</h5>
+            <p class="card-text">Encantadora pulsera de cuarzo amatista. Añade un toque de color y energía a tu estilo
+              diario.</p>
+            <p class="card-text" id="price">$8.00</p>
+            <a onclick="add('Pulsera Cuarzo Amatista', 8)" class="btn btn-primary bg-dark border-dark">Agregar al
+              carrito</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="text-light text-center py-3 mt-5" style="text-align: center; background-color: #262626;">
+    <p>&copy; 2023 Ariq. Todos los derechos reservados.</p>
+    <img class="social-logo" src="IG logo.png" alt=""> @Ariq
+    <img class="social-logo" src="WS Logo.png" alt=""> 0993437838
+  </footer>
+
+</body>
+
+</html>

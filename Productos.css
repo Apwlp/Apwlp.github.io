@@ -1,0 +1,109 @@
+* {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #262626;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+nav {
+  background-color: #fff;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #b6b6b6;
+}
+
+h1,
+h2 {
+  color: #262626;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 10px;
+  }
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.custom-btn {
+  background-color: #262626;
+  cursor: pointer;
+}
+
+.cart {
+  background-color: #262626;
+  color: #fff;
+  height: 50px;
+  width: auto;
+  font-size: 20px;
+  border: #262626 solid 1px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#price {
+  font-weight: bold;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.colors h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.colors input {
+  margin: 10px;
+}
+
+.container, ul {
+  margin-top: 0;
+}
+
+.brand-logo{
+  height: 150px;
+  width: 150px;
+}
+
+.social-logo {
+  margin-right: 5px;
+  margin-left: 50px;
+  height: 30px;
+  width: 30px;
+}
